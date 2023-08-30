@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login or Sign Up</title>
+    <link rel="stylesheet" href="cars.css" />
+  </head>
+  <body id="page-2">
+    <div id="login-body">
+      <div id="sign-upform">
+        <h1 class="log-titles">Login</h1>
+        <p class="log-titles">Welcome back! Sign in to your account</p>
+        <form type="submit" name="form-input" onsubmit="loginClick()">
+          <input
+            type="text"
+            name="email"
+            class="login-ad"
+            placeholder="Email Address"
+            id="login-ad"
+          />
+          <br />
+          <input
+            type="password"
+            name="password"
+            class="login-ad"
+            placeholder="Password"
+          />
+          <br />
+          <br />
+          <a href="./index.html" class="login-links">Return to store</a>
+          <br />
+          <br />
+          <a href="forgot-pass.html" class="login-links"
+            >Forgot your password?</a
+          >
+          <br /><br />
+          <button class="SignIn-btn">Sign In</button>
+        </form>
+      </div>
+      <div id="signIn-form">
+        <h1 class="log-titles">Create Account</h1>
+        <p class="log-titles">Create your own Motorhunk Account</p>
+        <form action="submit">
+          <input type="text" class="login-ad" placeholder="First Name" /> <br />
+          <br />
+          <input type="text" class="login-ad" placeholder="Last Name" /> <br />
+          <br />
+          <input type="email" class="login-ad" placeholder="Email Address" />
+          <br />
+          <br />
+          <input type="password" class="login-ad" placeholder="Password" />
+          <br />
+          <br />
+          <input type="button" value="Register" class="SignIn-btn" />
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="cars.js"></script>
+</html>

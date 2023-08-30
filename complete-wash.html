@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMPLETE CAR WASH</title>
+    <link rel="stylesheet" href="cars.css" />
+  </head>
+  <body id="wash-main-body">
+    <div>
+      <div id="back">
+        <a href="index.html" class="tata-home">Back to Store</a>
+      </div>
+      <div id="wash-main-content">
+        <h1 id="wash-head">We offer TOP-CLASS cleaning services</h1>
+
+        <input
+          type="text"
+          placeholder="Enter Mobile"
+          class="mobile-text"
+          id="mobile-input"
+          maxlength="10"
+        />
+        <button id="wash-btn" onclick="openPopUp()">BOOK AN APPOINTMENT</button>
+        <div id="popup" class="popup">
+          <img src="check-mark-verified.gif" alt="tickmark" class="check-gif" />
+          <p class="popup-content">
+            BOOKING SUCESSFULL!!,We will get back to you in a moment with the
+            availble slots,and an OTP
+          </p>
+          <button id="popup-btn" onclick="closePopUp()">OK</button>
+        </div>
+      </div>
+    </div>
+    <script src="cars.js"></script>
+    <script src="car-wash.js"></script>
+  </body>
+</html>

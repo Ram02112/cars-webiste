@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="cars.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="cartpage">
+      <a href="arm-rest.html" class="tata-home"><h2>STORE</h2></a>
+    </div>
+    <div id="top-shopcart" onclick="shopCart()">
+      <i class="fa fa-shopping-cart" id="cart-img"></i>
+      <p id="shop-items">0</p>
+    </div>
+
+    <div id="label" class="text-center"></div>
+    <div class="shopping-cart-td" id="shopping-cart-td"></div>
+    <div class="checkoutpop" id="checkoutpop">
+      <form type="submit" id="form">
+        <input
+          type="text"
+          placeholder="CARD DETAILS"
+          class="pop-ad"
+          maxlength="12"
+          id="pop-ad"
+        />
+        <input type="text" placeholder="NAME ON CARD" class="pop-ad" />
+        <input type="text" placeholder="CVV" class="pop-ad" maxlength="3" />
+        <input type="text" placeholder="expiry" class="pop-ad" />
+      </form>
+      <button type="submit" onclick="popSubmit()" id="sub-pop-btn">
+        SUBMIT
+      </button>
+      <button id="popup-btn" onclick="okedPop()">OK</button>
+      <p id="finalstate"></p>
+    </div>
+    <script src="data.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>
